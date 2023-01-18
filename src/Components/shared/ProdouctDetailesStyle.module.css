@@ -1,0 +1,120 @@
+.container{
+    margin: 150px 150px 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid silver;
+    background-color: #ffff;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.image{
+    width: 450px;
+}
+
+.textContainer{
+    text-align: left;
+    margin-left: 30px;
+    padding: 20px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.textContainer h3{
+    color:#1a73e8 ;
+    margin: 20px 0 30px;
+}
+
+.description{
+    color: #404040;
+    margin-bottom: 30px;
+}
+
+
+.category span{
+    color: orange;
+    font-size: 1rem;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonContainer a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #ffff;
+    padding: 7px 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+}
+
+.buttonContainer a:hover{
+    background-color: #0b4898;
+}
+
+.price{
+    display: inline-block;
+    background-color: green;
+    color: #ffff;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.butoonContainer span{
+    display: inline-block;
+    width: 20px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+@media(max-width:1200px){
+    .container{
+        margin:120px 80px 50px ;
+    }
+    .buttonContainer a{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:1000px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image{
+        width: 170px;
+        margin-bottom: 50px;
+    }
+    .textContainer{
+        margin: 0;
+    }
+
+}
+
+@media(max-width:768px){
+    .container{
+        width: 120px 40px 50px;
+        justify-content: center;
+    }
+    .textContainer{
+        margin: 0;
+    }
+}
+
+@media(max-width:555px){
+    .container{
+        margin: 120px 20px 50px;
+        justify-content: center;
+    }
+    .textContainer{
+        margin: 0;
+    }
+}
